@@ -1,14 +1,14 @@
 Link Website : https://pedantic-swirles-fe25d8.netlify.app/
 
 ## HomePage
-![image](https://user-images.githubusercontent.com/40540787/128604485-35d153e6-97c7-48cd-a7e4-2e005afc85b1.png)
+![image](https://user-images.githubusercontent.com/40540787/128604784-d6ff009e-6ea0-439e-b1da-401d03d2a83e.png)
 
 ## after click button add new user
-![image](https://user-images.githubusercontent.com/40540787/128604507-cba48ffe-8e48-41e1-ab15-9403f7f23f55.png)
+![image](https://user-images.githubusercontent.com/40540787/128604794-74fa390b-03e4-4195-b40f-c917584a53c8.png)
 
 ## delete user
-![image](https://user-images.githubusercontent.com/40540787/128604522-e1fdc098-d422-43f7-bdaa-15bfbb3ba64c.png)
+![image](https://user-images.githubusercontent.com/40540787/128604805-487ece86-ae4d-42db-a581-9e4439e883ad.png)
 
 ## update user
-![image](https://user-images.githubusercontent.com/40540787/128604538-a95738e0-5249-482c-9b94-5aa02528ded4.png)
-![image](https://user-images.githubusercontent.com/40540787/128604559-587d42a9-2b9b-4202-b7b7-2222e9bb23b3.png)
+![image](https://user-images.githubusercontent.com/40540787/128604828-37de122e-c99b-46eb-8435-9d1081d2c1d1.png)
+![image](https://user-images.githubusercontent.com/40540787/128604834-918348af-f581-4de1-bdc0-9a465af93f9e.png)
