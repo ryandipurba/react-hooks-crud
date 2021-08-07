@@ -8,7 +8,6 @@ const UserTable = (props) => {
   <Table striped >
    <thead>
     <tr>
-     <th>No</th>
      <th>Name</th>
      <th>Username</th>
      <th>Actions</th>
