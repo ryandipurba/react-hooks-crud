@@ -8,6 +8,7 @@ const UserTable = (props) => {
   <Table striped >
    <thead>
     <tr>
+     <th>No</th>
      <th>Name</th>
      <th>Username</th>
      <th>Actions</th>
@@ -20,8 +21,8 @@ const UserTable = (props) => {
        <td>{user.name}</td>
        <td>{user.username}</td>
        <td>
-        <Button outline color="primary" style={{ marginRight: "10px" }}>Edit</Button>
-        <Button outline color="danger">Delete</Button>
+        <Button outline color="primary" style={{ marginRight: "10px" }} onClick={() => { props.editRow(user) }}>Edit</Button>
+        <Button outline color="danger" onClick={() => props.deleteUser(user.id)} >Delete</Button>
        </td>
       </tr>
      ))

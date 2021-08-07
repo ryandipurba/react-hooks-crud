@@ -1,27 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Form, FormGroup, Input, Label, Button } from 'reactstrap'
 
-const AddUserForm = (props) => {
+const EditUserForm = (props) => {
+ const [user, setUser] = useState(props.currentUser)
 
- const initialFormState = { id: null, name: '', username: '' }
- const [user, setUser] = useState(initialFormState)
+ useEffect(() => {
+  setUser(props.currentUser)
+ },
+  [props]
+ )
 
- // handle value input
- const handleInputChange = (event) => {
+ const handleInputChange = event => {
   const { name, value } = event.target
   setUser({ ...user, [name]: value })
  }
 
-
-
  return (
   <Form
-   onSubmit={(event) => {
+   onSubmit={event => {
     event.preventDefault()
-    if (!user.name || !user.username) return
 
-    props.addUser(user)
-    setUser(initialFormState)
+    props.updateUser(user.id, user)
    }}
   >
    <FormGroup style={{ margin: "10px 0px" }}>
@@ -32,9 +31,10 @@ const AddUserForm = (props) => {
     <Label for="name">User Name</Label>
     <Input type="text" name="username" id="username" value={user.username} onChange={handleInputChange} />
    </FormGroup>
-   <Button color="primary" style={{ margin: "10px 0px" }}>Add new user</Button>
+   <Button color="primary" style={{ margin: "10px 0px" }}>Update user</Button>
+   <Button color="danger" style={{ margin: "10px 5px" }} onClick={() => props.setEditing(false)}>Cancel</Button>
   </Form>
  )
 }
 
-export default AddUserForm
+export default EditUserForm
